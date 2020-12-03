@@ -8,7 +8,7 @@ import {useState, useEffect} from 'react'
 function url(path) {
   return process.env.NODE_ENV === 'development'
     ? `http://localhost:5000${path}`
-    :''
+    : path
 }
 
 function App() {
